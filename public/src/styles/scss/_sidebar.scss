@@ -1,0 +1,32 @@
+.sidebar {
+  grid-column: span 1;
+  grid-row-start: 1;
+  grid-row-end: none;
+  background-color: rgb(222, 238, 149);
+  text-align: center;
+  padding: 20px 10px;
+  box-sizing: border-box;
+
+  &__menu {
+    list-style-type: none;
+  }
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  &__link {
+    text-decoration: none;
+    color: #111;
+    padding: 10px;
+
+    &:hover {
+      border-bottom: 1px solid black;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+}
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 100px 1fr 100px;
+}
+
+.header,
+.content,
+.footer {
+  grid-template-columns: auto;
+}
+
+.header,
+.content {
+  margin-bottom: 30px;
+}
+
+.content {
+  width: 100%;
+  background-color: rgb(88, 67, 145);
+}
+
+.container {
+  margin: 0 auto;
+  min-width: min-content;
+  max-width: 1000px;
+  background-color: rgb(67, 145, 106);
+}
+input {
+  border: none;
+  outline: none;
+}
+
+@import "./buttons";
+@import "./header";
+@import "./sidebar";
+@import "./table";
+@import "./footer";
