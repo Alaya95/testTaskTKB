@@ -135,7 +135,6 @@ function addDataArr(event) {
   if ((nameErr || emailErr || mobileErr || countryErr || genderErr) == true) {
     return false;
   } else {
-    // Создаем строки из входных данных для предварительного просмотра
     var dataPreview =
       "Вы ввели следующие данные: \n" +
       "ФИО: " +
