@@ -1,0 +1,16 @@
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+
+  &:hover {
+    box-shadow: 0 0 5px #ccc;
+  }
+
+  &:active {
+    background-color: #f1efef;
+    box-shadow: 0 0 4px #111;
+  }
+}
