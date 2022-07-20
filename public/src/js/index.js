@@ -92,7 +92,7 @@ function printError(elemId, hintMsg) {
   messageEl.classList.add("error__message");
   messageEl.innerText = hintMsg;
 
-  element.before(messageEl);
+  element.insertAdjacentHTML("beforebegin", `<p>${hintMsg}</p>`);
 }
 
 function addDataArr(event) {
@@ -132,7 +132,7 @@ function addDataArr(event) {
     console.log(competenceErr);
   }
 
-  if ((nameErr || emailErr || mobileErr || countryErr || genderErr) == true) {
+  if ((fullnameErr || ageErr || positionErr || competenceValue) == true) {
     return false;
   } else {
     var dataPreview =
